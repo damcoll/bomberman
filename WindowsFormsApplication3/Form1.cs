@@ -159,7 +159,7 @@ namespace WindowsFormsApplication3
             }
             private void loadMap(int map)
             {
-                string text = System.IO.File.ReadAllText(@"C:/Users/Administrateur/Documents/Visual Studio 2015/Projects/bomberman/map" + Convert.ToString(map) + ".txt");
+                string text = System.IO.File.ReadAllText(@"map" + Convert.ToString(map) + ".txt");
                 coordonner pos = new coordonner();
                 pos.x = 0;
                 pos.y = 0;
@@ -613,7 +613,7 @@ namespace WindowsFormsApplication3
         {
             if (plateau.plo.Count() == 0)
             {
-                System.IO.File.WriteAllText(@"C:/Users/Administrateur/Documents/Visual Studio 2015/Projects/bomberman/svg.txt", Convert.ToString(mapi + 1));
+                System.IO.File.WriteAllText(@"svg.txt", Convert.ToString(mapi + 1));
                 if (mapi + 1 == 6)
                 {
                     Form5 Form5 = new Form5();
@@ -739,7 +739,7 @@ namespace WindowsFormsApplication3
 
         private void label1_Click(object sender, EventArgs e)
         {
-            System.IO.File.WriteAllText(@"C:/Users/Administrateur/Documents/Visual Studio 2015/Projects/bomberman/svg.txt", Convert.ToString(mapi));
+            System.IO.File.WriteAllText(@"svg.txt", Convert.ToString(mapi));
             Form2 Form2 = new Form2();
             Form2.Show();
             timer1.Enabled = false;

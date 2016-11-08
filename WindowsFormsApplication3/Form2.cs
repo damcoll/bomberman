@@ -26,7 +26,7 @@ namespace WindowsFormsApplication3
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string text = System.IO.File.ReadAllText(@"C:/Users/Administrateur/Documents/Visual Studio 2015/Projects/bomberman/svg.txt");
+            string text = System.IO.File.ReadAllText(@"svg.txt");
             int svg = Convert.ToInt16(text);
             Form1 Form1 = new Form1(svg);
             Form1.Show();

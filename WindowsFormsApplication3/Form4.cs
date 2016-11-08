@@ -80,7 +80,7 @@ namespace WindowsFormsApplication3
 
         private void button2_Click(object sender, EventArgs e)
         {
-            String name = "C:/Users/Administrateur/Documents/Visual Studio 2015/Projects/bomberman/" + textBox1.Text +".txt";
+            String name = textBox1.Text +".txt";
             String map = "";
             int j = 0;
             int k = 0;
