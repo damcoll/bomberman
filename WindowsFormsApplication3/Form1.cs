@@ -642,20 +642,29 @@ namespace WindowsFormsApplication3
                 {
                     timer1.Stop();
                     MessageBox.Show("egaliter");
+                    Form2 Form2 = new Form2();
+                    Form2.Show();
+                    this.Hide();
                 }
                 else if (pointP1 == 100)
                 {
                     timer1.Stop();
                     MessageBox.Show("P1 Win");
+                    Form2 Form2 = new Form2();
+                    Form2.Show();
+                    this.Hide();
                 }
                 else if (pointP2 == 100)
                 {
                     timer1.Stop();
                     MessageBox.Show("P2 Win");
+                    Form2 Form2 = new Form2();
+                    Form2.Show();
+                    this.Hide();
                 }
                 else
                 {
-                    Form1 Form1 = new Form1(7, plateau.player[0].nbBombe, plateau.player[0].porteBombe, pointP1, pointP2);
+                    Form1 Form1 = new Form1(7, 1, 1, pointP1, pointP2);
                     Form1.Show();
                     this.Hide();
                     timer1.Enabled = false;
